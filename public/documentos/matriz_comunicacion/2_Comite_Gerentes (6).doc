@@ -1,0 +1,112 @@
+        <meta charset="utf-8">
+        <table border="1" width="600px">
+            <tr>
+                <td rowspan="2" colspan="1"><img src="http://serga.jp-planning.com/logo.png" border="0" height="50" width="140" align="middle" /></td>
+                <td rowspan="2" colspan="2"> <center>ACTA DE COMITE DE GERENTES</center></td>
+                <td colspan="1">Codigo: SGC-FOR-25 </td>
+            </tr>
+            <tr>
+                <td colspan="1">Version:   00</td>
+            </tr>
+
+            <tr>
+                <td colspan="1">N°</td>
+                <td colspan="3">1</td>
+            </tr>
+            <tr>
+                <td colspan="1">ÁREA/PROYECTO</td>
+                <td colspan="3">Sistemas</td>
+            </tr>
+            <tr>
+                <td colspan="1">TEMA DE LA REUNIÓN</td>
+                <td colspan="3">TEMA</td>
+            </tr>
+            <tr>
+                <td colspan="1">FECHA Y HORA</td>
+                <td colspan="3"></td>
+            </tr>
+
+            <tr>
+                <td colspan="4">PARTICIPANTES</td>
+            </tr>
+            <tr>
+                <td colspan="2"><strong>Nombre:</strong></td>
+                <td colspan="2"><strong>Cargo:</strong></td>
+            </tr>
+            <tr><td colspan='2'>Somos Lozada</td><td colspan='2'>Jefe</td></tr><tr><td colspan='2'>Jhosselin  Prueba 1</td><td colspan='2'>JEFE DE PROYECTO</td></tr>            <tr>
+                <td colspan="4">REVISIÓN DE PENDIENTES:</td>
+            </tr>
+            <tr>
+              <td colspan="4">    pen1
+pen2
+pen3 </td>
+            </tr>
+            <tr>
+                <td colspan="4"><strong>AVANCES DEL PROYECTO:</strong></td>
+            </tr>
+            <tr>
+                <td colspan="4">    aan1
+aan2
+ann3 </td>
+            </tr>
+            <tr>
+                <td colspan="4"><strong>ENCARGOS DE LA SIGUIENTE SEMANA:</strong></td>
+            </tr>
+            <tr>
+                <td colspan="4">  nahito</td>
+            </tr>
+            <tr>
+                <td colspan="4"><strong>FECHA PROXIMA REUNIÓN: </strong></td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                29-06-2017            </tr>
+</table>
+
+<br><br>
+<table border="1">
+    <tr>
+        <td colspan="4"><strong>FIRMAS</strong></td>
+    </tr>
+    <tr>
+        <td>Cargo: Gerente de Proyectos de Gestión Predial </td>
+        <td>Cargo: Gerente de Autorizaciones y Permisos</td>
+        <td>Cargo: Gerente de Servicios en Gestión Predial</td>
+        <td>Cargo: Gerente de Calidad</td>
+    </tr>
+    <tr>
+        <td>
+            <br><br><br>
+        </td>
+        <td>
+            <br><br><br>
+        </td>
+        <td>
+            <br><br><br>
+        </td>
+        <td>
+            <br><br><br>
+        </td>
+    </tr>
+    <tr>
+        <td>Cargo: Gerente de Administración </td>
+        <td>Cargo: Coordinador de Contratos y Propuestas</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>
+            <br><br><br>
+        </td>
+        <td>
+            <br><br><br>
+        </td>
+        <td>
+            <br><br><br>
+        </td>
+        <td>
+            <br><br><br>
+        </td>
+    </tr>
+</table>
+

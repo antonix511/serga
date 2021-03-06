@@ -1,0 +1,86 @@
+        <meta charset="utf-8">
+        <table border="1" width="600px">
+            <tr>
+                <td rowspan="2" colspan="1"><img src="http://serga.jp-planning.com/logo.png" border="0" height="50" width="100" align="middle" /></td>
+                <td rowspan="2" colspan="2"> <center>ACTA REUNION</center> </td>
+                <td colspan="1">Codigo: SGC-FOR-21 </td>
+            </tr>
+            <tr>
+                <td colspan="1">Version: 01</td>
+            </tr>
+
+            <tr>
+                <td align="right" colspan="3">Numero</td>
+                <td>AR-LDRC-2017-SP-5</td>
+            </tr>
+
+            <tr>
+                <td colspan="1">ÁREA/PROYECTO</td>
+                <td colspan="3">
+                Area Prueba</td>
+            </tr>
+            <tr>
+                <td colspan="1">TEMA DE LA REUNIÓN</td>
+                <td colspan="3"> TEMA DE LA REUNION                </td>
+            </tr>
+            <tr>
+                <td colspan="3">FECHA :</td>
+                <td colspan="1">29-06-2017</td>
+            </tr>
+            <tr>
+                <td colspan="3">ENCARGADO DE AREA/PROYECTO</td>
+                <td colspan="1">
+                Luli Mimi MImi
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">PARTICIPANTES</td>
+            </tr>
+            <tr>
+                <td colspan="2"><strong>Nombre:</strong></td>
+                <td colspan="2"><strong>Cargo:</strong></td>
+            </tr>
+                        <tr>
+                <td colspan="4"><strong>TEMAS TRATADOS</strong><br>
+                TEMA1
+TEMA2
+TEMA3</td>
+            </tr>
+            <tr>
+                <td colspan="4"><strong>ACCIONES</strong><br>
+                  AIO1
+AIO2
+AIO3
+</td>
+            </tr>
+            <tr>
+                <td colspan="4"><strong>FECHA:</strong></td>
+            </tr>
+            <tr>
+                <td colspan="4">SE ESTIMA PLAZO PARA LA ENTREGA A CONTROL DE CALIDAD DEL INFORME EL 2017-06-29.</td>
+            </tr>
+</table>
+
+<br><br>
+<table border="1">
+    <tr>
+        <td colspan="3"><strong>FIRMAS</strong></td>
+    </tr>
+    <tr>
+        <td>Cargo: Gerente</td>
+        <td>Cargo: Jefe de Proyecto</td>
+        <td>Cargo: Especialista en Diagnóstico,<br>Saneamiento y Negociación</td>
+    </tr>
+    <tr>
+        <td>
+            <br><br><br>
+        </td>
+        <td>
+            <br><br><br>
+        </td>
+        <td>
+            <br><br><br>
+        </td>
+    </tr>
+</table>
+

@@ -1,0 +1,10 @@
+
+-----1. En la parte de Centro de costos, no lo hice, ahi ya se tenia una pantalla hecha, en donde se actualizaba el centro de costo, esto tu ya lo habias visto, pero ahora veo la lista y se ve diferente. Aunque creo que se cambia cuando cambio las fechas, por favor terminar eso.
+
+--2. Terminar la parte de modificar, cada uno de los documentos(do it)
+--3. Cuando se termina de registrar un documento, se tiene que poner el check, en el resumen del proyecto(do it)
+4. A los correos poner formato como el de jetshop, esto ya lo hizo johan, porfavor que te ayude.
+--5. Hacer la gestión de MODELOS(do it)
+--6. En acta de cierre terminar: entregables y lecciones aprendidas (aqui los campos son: descripcion de la situacion, --consecuencia, accion implementada, concepto de mejora/recomendacion)(do it)
+7. Se debe poder crear perfiles, a cada perfil se le habilita los módulos, que son básicamente cada una de las pantallas, entonces cuando creas un usuario, se le asigna un perfil, y este debe poder acceder solo a los que tiene permisos, a los que no, no los debe mostrar o los debe botar simplemente diciendo: usted no tiene permisos para este sitio
+8. Hacer los archivos que se exportan, según los formatos que se han pasado(7-8)
