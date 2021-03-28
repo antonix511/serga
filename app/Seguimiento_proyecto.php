@@ -27,6 +27,7 @@ class Seguimiento_proyecto extends Model
         'p_vc',
         'idc',
         'ids',
+        'pv_total',
         'fecha_registro',
         'fecha_seguimiento',
         'ultimo_int',

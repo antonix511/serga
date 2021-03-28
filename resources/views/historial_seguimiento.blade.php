@@ -115,7 +115,7 @@
                                                 <td class="text-center"></td>
                                             @endif
 
-                                            @if (!empty($historial->idc))
+                                            @if (!empty(floatval($historial->idc)))
                                                 @if ($historial->idc != 99.99)
                                                     <td class="text-center">{{ ($historial->idc > 1) ? '>1' : '<1' }}</td>
                                                 @else
@@ -131,7 +131,7 @@
                                                 <td class="text-center"></td>
                                             @endif
 
-                                            @if (!empty($historial->ids))
+                                            @if (!empty(floatval($historial->ids)))
                                                 @if ($historial->ids != 99.99)
                                                    <td class="text-center">{{ ($historial->ids > 1) ? '>1' : '<1' }}</td>
                                                 @else

@@ -111,7 +111,99 @@
                             </div>
                         </div>
                         <div class="row">
-
+                            <div class="accordion" id="proyecciones">
+                                <div class="card">
+                                    <div class="card-header" id="headOne">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                Proyecciones
+                                            </button>
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headOne" data-parent="#proyecciones">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="row">
+                                                <div class="col-md-3 col-sm-3">
+                                                    <label class="control-label">En el mejor de los casos</label>
+                                                </div>
+                                                <div class="col-md-3 col-sm-3">
+                                                    <label class="control-label">{{ $mejor_caso }}</label>
+                                                </div>
+                                                <div class="col-md-3 col-sm-3">
+                                                    <label class="control-label">{{ $tt_mejor_caso }}</label>
+                                                </div>
+                                                <div class="col-md-3 col-sm-3"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-3 col-sm-3">
+                                                    <label class="control-label">Variación hasta la conclusión</label>
+                                                </div>
+                                                <div class="col-md-3 col-sm-3">
+                                                    <label class="control-label">{{ $var_mejor }}</label>
+                                                </div>
+                                                <div class="col-md-3 col-sm-3">
+                                                    <label class="control-label">{{ $tt_var_mejor }}</label>
+                                                </div>
+                                                <div class="col-md-3 col-sm-3"></div>
+                                            </div>
+                                            <div class="row" style="padding: 2%;"></div>
+                                            <div class="row">
+                                                <div class="col-md-3 col-sm-3">
+                                                    <label class="control-label">En el peor de los casos</label>
+                                                </div>
+                                                <div class="col-md-3 col-sm-3">
+                                                    <label class="control-label">{{ $peor_caso }}</label>
+                                                </div>
+                                                <div class="col-md-3 col-sm-3">
+                                                    <label class="control-label">{{ $tt_peor_caso }}</label>
+                                                </div>
+                                                <div class="col-md-3 col-sm-3"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-3 col-sm-3">
+                                                    <label class="control-label">Variación hasta la conclusión</label>
+                                                </div>
+                                                <div class="col-md-3 col-sm-3">
+                                                    <label class="control-label">{{ $var_peor }}</label>
+                                                </div>
+                                                <div class="col-md-3 col-sm-3">
+                                                    <label class="control-label">{{ $tt_var_peor }}</label>
+                                                </div>
+                                                <div class="col-md-3 col-sm-3"></div>
+                                            </div>
+                                            <div class="row" style="padding: 2%;"></div>
+                                            <div class="row">
+                                                <div class="col-md-3 col-sm-3">
+                                                    <label class="control-label">En el mejor de los escenarios</label>
+                                                </div>
+                                                <div class="col-md-3 col-sm-3">
+                                                    <label class="control-label">{{ $mejor_esc }}</label>
+                                                </div>
+                                                <div class="col-md-3 col-sm-3">
+                                                    <label class="control-label">{{ $tt_mejor_esc }}</label>
+                                                </div>
+                                                <div class="col-sm-3 col-md-3"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-3 col-sm-3">
+                                                    <label class="control-label">En el peor de los escenarios</label>
+                                                </div>
+                                                <div class="col-md-3 col-sm-3">
+                                                    <label class="control-label">{{ $peor_esc }}</label>
+                                                </div>
+                                                <div class="col-md-3 col-sm-3">
+                                                    <label class="control-label">{{ $tt_peor_esc }}</label>
+                                                </div>
+                                                <div class="col-md-3 col-sm-3"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

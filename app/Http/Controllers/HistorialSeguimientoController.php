@@ -93,6 +93,7 @@ class HistorialSeguimientoController extends Controller
         $seguimiento->p_vc = $result['p_vc'];
         $seguimiento->p_vs = $result['p_vs'];
         $seguimiento->fecha_seguimiento = Carbon::now();
+        $seguimiento->pv_total = implode(',', $result['total_pv']);
         $seguimiento->save();
         return new JsonResponse(['status' => 'OK', 'response' => $result], 200);
     }
@@ -133,6 +134,7 @@ class HistorialSeguimientoController extends Controller
         $response['ev'] = $evAcumulado[$indice];
         $response['ac'] = $acAcumulado[$indice];
         $response['pv'] = $pvAcumulado[$indice];
+        $response['total_pv'] = $pvAcumulado;
 
         return $response;
     }
