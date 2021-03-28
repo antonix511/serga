@@ -9,7 +9,8 @@
         "laravel/framework": "5.1.*",
 	    "barryvdh/laravel-dompdf": "0.6.*",
         "amenadiel/jpgraph": "^3.6",
-        "phpoffice/phpspreadsheet": "^1.16"
+        "phpoffice/phpspreadsheet": "^1.16",
+        "ext-bcmath": "*"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

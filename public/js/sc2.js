@@ -1,12 +1,6 @@
-$(document).ready(function() {
-
-
-
-
-
-
+$(document).ready(function () {
+    $('[data-toggle="tooltip"]').tooltip()
 });
-
 
 
 function datos_doc_menu(idproyecto) {

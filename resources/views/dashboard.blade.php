@@ -8,10 +8,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SERGA</title>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="{{ asset('/js/jquery-ui.js') }}"></script>
     @include("cabeza2")
 </head>
 <body>
@@ -55,13 +51,13 @@
                                         <label class="control-label">Variación del Costo (S/.)</label>
                                     </div>
                                     <div class="col-sm-2 col-md-2 col-xs-6">
-                                        <input type="number" class="form-control1" id="vc" value="{{ $vc }}" data-placement="bottom" data-toggle="tooltip" title="" disabled>
+                                        <input type="number" class="form-control1" id="vc" value="{{ $vc }}" data-placement="right" data-toggle="tooltip" title="" disabled>
                                     </div>
                                     <div class="col-sm-3 col-md-3 col-xs-6">
                                         <label class="control-label">Índice Desempeño Costo</label>
                                     </div>
                                     <div class="col-sm-2 col-md-2 col-xs-6">
-                                        <input type="number" class="form-control1" id="idc" value="{{ $idc }}" data-placement="bottom" data-toggle="tooltip" title="" disabled>
+                                        <input type="number" class="form-control1" id="idc" value="{{ $idc }}" data-placement="right" data-toggle="tooltip" title="" disabled>
                                     </div>
                                     <div class="col-md-2 col-sm-2"></div>
                                 </div>
@@ -79,13 +75,13 @@
                                         <label class="control-label">Variación del Cronograma</label>
                                     </div>
                                     <div class="col-sm-2 col-md-2 col-xs-6">
-                                        <input type="number" class="form-control1" id="vs" value="{{ $vs }}" data-placement="bottom" data-toggle="tooltip" title="" disabled>
+                                        <input type="number" class="form-control1" id="vs" value="{{ $vs }}" data-placement="right" data-toggle="tooltip" title="" disabled>
                                     </div>
                                     <div class="col-sm-3 col-md-3 col-xs-6">
                                         <label class="control-label">Índice de Desempeño Cronograma</label>
                                     </div>
                                     <div class="col-sm-2 col-md-2 col-xs-6">
-                                        <input type="number" class="form-control1" id="ids" value="{{ $ids }}" data-placement="bottom" data-toggle="tooltip" title="" disabled>
+                                        <input type="number" class="form-control1" id="ids" value="{{ $ids }}" data-placement="right" data-toggle="tooltip" title="" disabled>
                                     </div>
                                     <div class="col-sm-2 col-md-2"></div>
                                 </div>
@@ -110,98 +106,82 @@
                                 <canvas id="myChart"></canvas>
                             </div>
                         </div>
+                        <h3 class="w3_inner_tittle two">Proyecciones</h3>
                         <div class="row">
-                            <div class="accordion" id="proyecciones">
-                                <div class="card">
-                                    <div class="card-header" id="headOne">
-                                        <h2 class="mb-0">
-                                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                Proyecciones
-                                            </button>
-                                        </h2>
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md-2 col-sm-3">
+                                        <label class="control-label">En el mejor de los casos</label>
                                     </div>
+                                    <div class="col-md-2 col-sm-3">
+                                        <input type="number" class="form-control1" value="{{ $mejor_caso }}" disabled>
+                                    </div>
+                                    <div class="col-md-4 col-sm-3">
+                                        <label class="control-label">{{ $tt_mejor_caso }}</label>
+                                    </div>
+                                    <div class="col-md-4 col-sm-3"></div>
                                 </div>
-                            </div>
-                            <div id="collapseOne" class="collapse show" aria-labelledby="headOne" data-parent="#proyecciones">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="row">
-                                                <div class="col-md-3 col-sm-3">
-                                                    <label class="control-label">En el mejor de los casos</label>
-                                                </div>
-                                                <div class="col-md-3 col-sm-3">
-                                                    <label class="control-label">{{ $mejor_caso }}</label>
-                                                </div>
-                                                <div class="col-md-3 col-sm-3">
-                                                    <label class="control-label">{{ $tt_mejor_caso }}</label>
-                                                </div>
-                                                <div class="col-md-3 col-sm-3"></div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-3 col-sm-3">
-                                                    <label class="control-label">Variación hasta la conclusión</label>
-                                                </div>
-                                                <div class="col-md-3 col-sm-3">
-                                                    <label class="control-label">{{ $var_mejor }}</label>
-                                                </div>
-                                                <div class="col-md-3 col-sm-3">
-                                                    <label class="control-label">{{ $tt_var_mejor }}</label>
-                                                </div>
-                                                <div class="col-md-3 col-sm-3"></div>
-                                            </div>
-                                            <div class="row" style="padding: 2%;"></div>
-                                            <div class="row">
-                                                <div class="col-md-3 col-sm-3">
-                                                    <label class="control-label">En el peor de los casos</label>
-                                                </div>
-                                                <div class="col-md-3 col-sm-3">
-                                                    <label class="control-label">{{ $peor_caso }}</label>
-                                                </div>
-                                                <div class="col-md-3 col-sm-3">
-                                                    <label class="control-label">{{ $tt_peor_caso }}</label>
-                                                </div>
-                                                <div class="col-md-3 col-sm-3"></div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-3 col-sm-3">
-                                                    <label class="control-label">Variación hasta la conclusión</label>
-                                                </div>
-                                                <div class="col-md-3 col-sm-3">
-                                                    <label class="control-label">{{ $var_peor }}</label>
-                                                </div>
-                                                <div class="col-md-3 col-sm-3">
-                                                    <label class="control-label">{{ $tt_var_peor }}</label>
-                                                </div>
-                                                <div class="col-md-3 col-sm-3"></div>
-                                            </div>
-                                            <div class="row" style="padding: 2%;"></div>
-                                            <div class="row">
-                                                <div class="col-md-3 col-sm-3">
-                                                    <label class="control-label">En el mejor de los escenarios</label>
-                                                </div>
-                                                <div class="col-md-3 col-sm-3">
-                                                    <label class="control-label">{{ $mejor_esc }}</label>
-                                                </div>
-                                                <div class="col-md-3 col-sm-3">
-                                                    <label class="control-label">{{ $tt_mejor_esc }}</label>
-                                                </div>
-                                                <div class="col-sm-3 col-md-3"></div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-3 col-sm-3">
-                                                    <label class="control-label">En el peor de los escenarios</label>
-                                                </div>
-                                                <div class="col-md-3 col-sm-3">
-                                                    <label class="control-label">{{ $peor_esc }}</label>
-                                                </div>
-                                                <div class="col-md-3 col-sm-3">
-                                                    <label class="control-label">{{ $tt_peor_esc }}</label>
-                                                </div>
-                                                <div class="col-md-3 col-sm-3"></div>
-                                            </div>
-                                        </div>
+                                <div class="row">
+                                    <div class="col-md-2 col-sm-3">
+                                        <label class="control-label">Variación hasta la conclusión</label>
                                     </div>
+                                    <div class="col-md-2 col-sm-3">
+                                        <input type="number" class="form-control1" value="{{ $var_mejor }}" disabled>
+                                    </div>
+                                    <div class="col-md-4 col-sm-3">
+                                        <label class="control-label">{{ $tt_var_mejor }}</label>
+                                    </div>
+                                    <div class="col-md-4 col-sm-3"></div>
+                                </div>
+                                <div class="row" style="padding: 2%;"></div>
+                                <div class="row">
+                                    <div class="col-md-2 col-sm-3">
+                                        <label class="control-label">En el peor de los casos</label>
+                                    </div>
+                                    <div class="col-md-2 col-sm-3">
+                                        <input type="number" class="form-control1" value="{{ $peor_caso }}" disabled>
+                                    </div>
+                                    <div class="col-md-4 col-sm-3">
+                                        <label class="control-label">{{ $tt_peor_caso }}</label>
+                                    </div>
+                                    <div class="col-md-4 col-sm-3"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-2 col-sm-3">
+                                        <label class="control-label">Variación hasta la conclusión</label>
+                                    </div>
+                                    <div class="col-md-2 col-sm-3">
+                                        <input type="number" class="form-control1" value="{{ $var_peor }}" disabled>
+                                    </div>
+                                    <div class="col-md-4 col-sm-3">
+                                        <label class="control-label">{{ $tt_var_peor }}</label>
+                                    </div>
+                                    <div class="col-md-4 col-sm-3"></div>
+                                </div>
+                                <div class="row" style="padding: 2%;"></div>
+                                <div class="row">
+                                    <div class="col-md-2 col-sm-3">
+                                        <label class="control-label">En el mejor de los escenarios</label>
+                                    </div>
+                                    <div class="col-md-2 col-sm-3">
+                                        <input type="number" class="form-control1" value="{{ $mejor_esc }}" disabled>
+                                    </div>
+                                    <div class="col-md-4 col-sm-3">
+                                        <label class="control-label">{{ $tt_mejor_esc }}</label>
+                                    </div>
+                                    <div class="col-sm-4 col-md-3"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-2 col-sm-3">
+                                        <label class="control-label">En el peor de los escenarios</label>
+                                    </div>
+                                    <div class="col-md-2 col-sm-3">
+                                        <input type="number" class="form-control1" value="{{ $peor_esc }}" disabled>
+                                    </div>
+                                    <div class="col-md-4 col-sm-3">
+                                        <label class="control-label">{{ $tt_peor_esc }}</label>
+                                    </div>
+                                    <div class="col-md-4 col-sm-3"></div>
                                 </div>
                             </div>
                         </div>
@@ -322,9 +302,6 @@
         }
     </script>
     <script>
-        $(document).ready(function () {
-            $('[data-toggle="tooltip"]').tooltip()
-        });
 
         var array_ac = document.getElementById("ac").value.split(",");
         var array_ev = document.getElementById("ev").value.split(",");

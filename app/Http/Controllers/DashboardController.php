@@ -34,9 +34,6 @@ class DashboardController extends Controller
         $mejorCaso = $historial->ac + (end($pvTotal) - $historial->ev);
         $varMejor = end($pvTotal) - $mejorCaso;
 
-//        dd(end($pvTotal) - $primerHistorial->ev);
-        dd($historial->idc * $historial->ids);
-
         $peorCaso = round($primerHistorial->ac + (((end($pvTotal) - $primerHistorial->ev) * 1.0) / (($historial->idc * $historial->ids) * 1.0)), 2);
         $varPeor = end($pvTotal) - $peorCaso;
 
